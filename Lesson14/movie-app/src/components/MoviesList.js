@@ -24,7 +24,7 @@ export default function MoviesList({movieReducer,deleteMovie}) {
   return (
     <div>
       <HashLoader size={40} color='red' loading={movieReducer.fetching}/>
-      {movieReducer.length === 0 ? emptyMessage : moviesList}</div>
+      {movieReducer.movies.length === 0 ? emptyMessage : moviesList}</div>
   )
 }
 
